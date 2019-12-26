@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+//创建接口  封装进去一个move方法
 type Action interface {
 	Move(int) int
 }
@@ -40,10 +41,10 @@ type BirdFactory struct {
 func (this *BirdFactory) CreateAnimal() Action {
 	return &Bird{}
 }
-
+//定义一个类型  实际是空接口
 type FishFactory struct {
 }
-
+//上面类型的方法   返回一个实例化的接口
 func (this *FishFactory) CreateAnimal() Action {
 	return &Fish{}
 }
