@@ -37,7 +37,10 @@ func main() {
 		Name:     "Lao wang",
 		Location: "Xi Cheng",
 	}
+	//可以直接调用自己的方法
+	m.SailHouse()
 
+	//实例化到另一个struct，再调用自己的方法
 	proxier := &Proxier{
 		Mofbj: m,
 	}
