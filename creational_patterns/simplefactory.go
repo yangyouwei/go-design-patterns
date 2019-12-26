@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+//创建接口  封装进去一个move方法
 type Action interface {
 	Move(int) int
 }
@@ -34,18 +35,21 @@ type Dog struct {
 	Animal
 }
 
+
 func (this *Dog) Move(num int) int {
 	fmt.Printf("I am a dog, I flying %d meters.\n", num)
 	return num
 }
-
+//定义一个类型  实际是空接口
 type AnimalFactory struct {
 }
 
+//创建上面类型的 函数。返回一个上面的类型
 func NewAnimalFactory() *AnimalFactory {
 	return &AnimalFactory{}
 }
 
+//上面类型的方法   返回一个实例化的接口
 func (this *AnimalFactory) CreateAnimal(name string) Action {
 	switch name {
 	case "bird":
@@ -61,6 +65,7 @@ func (this *AnimalFactory) CreateAnimal(name string) Action {
 }
 
 func main() {
+	//创建一个类型调，并用类型的方法。返回一个实例化的接口。
 	bird := NewAnimalFactory().CreateAnimal("bird")
 	bird.Move(100)
 
