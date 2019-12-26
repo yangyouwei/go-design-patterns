@@ -13,10 +13,10 @@
 
 |模式|描述|
 |:--:|:--:|
-|[简单工厂模式](https://github.com/jeanphorn/go-design-patterns/blob/master/creational_patterns/simplefactory.go)|提供一个接口，根据不同的输入生成不同的实例|
-|[工厂方法模式](https://github.com/jeanphorn/go-design-patterns/blob/master/creational_patterns/funcfactory.go)|每个实例都有创建该实例的工厂|
-|[建造者模式](https://github.com/jeanphorn/go-design-patterns/blob/master/creational_patterns/builder.go)|将一个复杂的对象与它的表示分离，同样的创造过程可以建造出不停的表示|
-|[单例模式](https://github.com/jeanphorn/go-design-patterns/blob/master/creational_patterns/singleton.go)|在程序运行过程中之产生一个实例|
+|[简单工厂模式](https://github.com/yangyouwei/go-design-patterns/blob/master/creational_patterns/simplefactory.go)|提供一个接口，根据不同的输入生成不同的实例|
+|[工厂方法模式](https://github.com/yangyouwei/go-design-patterns/blob/master/creational_patterns/funcfactory.go)|每个实例都有创建该实例的工厂|
+|[建造者模式](https://github.com/yangyouwei/go-design-patterns/blob/master/creational_patterns/builder.go)|将一个复杂的对象与它的表示分离，同样的创造过程可以建造出不停的表示|
+|[单例模式](https://github.com/yangyouwei/go-design-patterns/blob/master/creational_patterns/singleton.go)|在程序运行过程中之产生一个实例|
 
 ## 2.2 结构型模式
 
@@ -24,9 +24,9 @@
 
 |模式|描述|
 |:--:|:--:|
-|[外观模](https://github.com/jeanphorn/go-design-patterns/blob/master/structural_patterns/facade.go)|引入子系统统一调用入口|
-|[装饰模式](https://github.com/jeanphorn/go-design-patterns/blob/master/structural_patterns/decorator.go)|动态扩展已存在对象的功能|
-|[代理模式](https://github.com/jeanphorn/go-design-patterns/blob/master/structural_patterns/proxy.go)|通过一个对象代理其他对象的功能|
+|[外观模](https://github.com/yangyouwei/go-design-patterns/blob/master/structural_patterns/facade.go)|引入子系统统一调用入口|
+|[装饰模式](https://github.com/yangyouwei/go-design-patterns/blob/master/structural_patterns/decorator.go)|动态扩展已存在对象的功能|
+|[代理模式](https://github.com/yangyouwei/go-design-patterns/blob/master/structural_patterns/proxy.go)|通过一个对象代理其他对象的功能|
 
 ## 2.2 行为型模式
 
@@ -34,4 +34,4 @@
 
 |模式|描述|
 |:--:|:--:|
-|[观察者模式](https://github.com/jeanphorn/go-design-patterns/blob/master/behavioral_patterns/observer.go)|将特定事件发生引起关联的观察者对象更新相关内容|
+|[观察者模式](https://github.com/yangyouwei/go-design-patterns/blob/master/behavioral_patterns/observer.go)|将特定事件发生引起关联的观察者对象更新相关内容|
