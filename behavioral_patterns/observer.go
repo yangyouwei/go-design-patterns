@@ -38,6 +38,7 @@ type ConcreteSubject struct {
 }
 
 func (cs *ConcreteSubject) Regist(ob Observer) {
+	//参看空结构说明。这里的结构无意义。不存任何东西。在本程序中
 	cs.Observers[ob] = struct{}{}
 }
 
@@ -52,18 +53,20 @@ func (cs *ConcreteSubject) Notify(e *Event) {
 }
 
 func main() {
+	//创建一个观察者的容器
 	cs := &ConcreteSubject{
 		Observers: make(map[Observer]struct{}),
 	}
-
+	//创建观察者
 	cobserver1 := &ConcreteObserver{1}
 	cobserver2 := &ConcreteObserver{2}
-
+	//注册观察者到容器
 	cs.Regist(cobserver1)
 	cs.Regist(cobserver2)
 
 	for i := 0; i < 5; i++ {
 		e := &Event{fmt.Sprintf("msg [%d]", i)}
+		//notify 调用了参数e的update方法
 		cs.Notify(e)
 
 		time.Sleep(time.Duration(1) * time.Second)
